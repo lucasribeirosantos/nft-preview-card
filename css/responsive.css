@@ -1,0 +1,25 @@
+@media (max-width: 320px) {
+    .main .container {
+        max-width: 280px;
+    }
+}
+
+@media (min-width: 374px) and (max-width: 424px) {
+    .main .container {
+        max-width: 300px;
+        margin: 0px 20px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .main .container {
+        max-width: 300px;
+        margin: 0px 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main .container {
+        max-width: 300px;
+    }
+}

@@ -1,0 +1,163 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main .container {
+    background-color: hsl(216, 50%, 16%);
+    max-width: 325px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.main .container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.main .container .image-link {
+    position: relative;
+    display: flex;
+}
+
+.main .container .image-link::before {
+    content: '';
+    background-color: cyan;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.main .container .image-link:hover::before {
+    opacity: 0.4;
+}
+
+.main .container .image-link:hover::after {
+    opacity: 1;
+}
+
+.main .container .image-link::after {
+    content: '';
+    background: url(../images/icon-view.svg) no-repeat center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.main .container .main-info {
+    font-family: "Outfit", sans-serif;
+}
+
+.main .container .main-info .title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.main .container .main-info .title a:hover {
+    color: hsl(178, 100%, 50%);
+    transition: 0.3s ease-in-out;
+}
+
+.main .container .main-info .title a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.main .container .main-info .text {
+    margin-top: 20px;
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+}
+
+.main .container .eth-info {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Outfit", sans-serif;
+    margin-top: 25px;
+}
+
+.main .container .eth-info .eth-number {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    display: flex;
+}
+
+.main .container .eth-info .eth-number::before {
+    content: '';
+    background: url(../images/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 6px;
+    display: inline-block;
+    height: 17px;
+    width: 15px;
+}
+
+.main .container .eth-info .eth-days {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    display: flex;
+}
+
+.main .container .eth-info .eth-days::before {
+    content: '';
+    background: url(../images/icon-clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 8px;
+    display: inline-block;
+    height: 20px;
+    width: 15px;
+}
+
+.main .container .line {
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    margin-top: 23px;
+}
+
+.main .container .profile {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+}
+
+.main .container .profile .profile-avatar {
+    width: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.main .container .profile .profile-info {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.main .container .profile .profile-info a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+}
+
+.main .container .profile a:hover {
+    color: hsl(178, 100%, 50%);
+    transition: 0.3s ease-in-out;
+}
+
+
